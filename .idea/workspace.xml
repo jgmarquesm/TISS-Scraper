@@ -4,25 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7cae2992-1825-49d4-9a9d-a59b79795771" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/groovy/tissscraper/App.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/groovy/tissscraper/HistoricoDeVersoes.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/groovy/tissscraper/PadraoDoMes.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/groovy/tissscraper/TabelasRelacionadas.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/groovy/tissscraper/TissScraper.groovy" afterDir="false" />
-    </list>
+    <list default="true" id="7cae2992-1825-49d4-9a9d-a59b79795771" name="Changes" comment="FEAT: Coleta de dados das tasks 1, 2 e 3 feitas." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -124,6 +106,14 @@
       <option name="presentableId" value="Default" />
       <updated>1665606028509</updated>
     </task>
+    <task id="LOCAL-00001" summary="FEAT: Coleta de dados das tasks 1, 2 e 3 feitas.">
+      <created>1665643597976</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1665643597976</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -136,5 +126,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="FEAT: Coleta de dados das tasks 1, 2 e 3 feitas." />
+    <option name="LAST_COMMIT_MESSAGE" value="FEAT: Coleta de dados das tasks 1, 2 e 3 feitas." />
   </component>
 </project>
