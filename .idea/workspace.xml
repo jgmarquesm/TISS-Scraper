@@ -4,7 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7cae2992-1825-49d4-9a9d-a59b79795771" name="Changes" comment="FEAT: Coleta de dados das tasks 1, 2 e 3 feitas." />
+    <list default="true" id="7cae2992-1825-49d4-9a9d-a59b79795771" name="Changes" comment="FEAT: Coleta de dados das tasks 1, 2 e 3 feitas.">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/groovy/tissscraper/DAO/EmailDAO.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/groovy/tissscraper/gerenciamento/emails/AtualizacaoDeEmail.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/groovy/tissscraper/gerenciamento/emails/CadastroDeEmail.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/groovy/tissscraper/gerenciamento/emails/EnviarEmail.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/groovy/tissscraper/gerenciamento/emails/ExclusaoDeEmail.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/groovy/tissscraper/gerenciamento/relatorio/EnviarRelatorio.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/groovy/tissscraper/scrapers/ScrapeAll.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Downloads/Componentes de comunicação Set2022.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Downloads/Informações sobre versões do Padrão TISS Jan2016-Set2022.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Downloads/Tabela Erros de envio para ANS.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/groovy/tissscraper/App.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/tissscraper/App.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/groovy/tissscraper/HistoricoDeVersoes.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/tissscraper/scrapers/HistoricoDeVersoes.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/groovy/tissscraper/PadraoDoMes.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/tissscraper/scrapers/PadraoDoMes.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/groovy/tissscraper/TabelasRelacionadas.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/tissscraper/scrapers/TabelasRelacionadas.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/groovy/tissscraper/TissScraper.groovy" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,7 +57,7 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="TISS-Scraper" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="other" type="c8890929:TasksNode$1" />
+                <item name="application" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -58,18 +78,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="tissscraper.App" />
       <module name="TISS-Scraper.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tissscraper.*" />
+          <option name="PATTERN" value="tissscraper.scrapers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -77,12 +97,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TissScraper" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="tissscraper.TissScraper" />
+    <configuration name="ScrapeAll" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tissscraper.scrapers.ScrapeAll" />
       <module name="TISS-Scraper.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tissscraper.*" />
+          <option name="PATTERN" value="tissscraper.scrapers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -93,7 +113,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.App" />
-        <item itemvalue="Application.TissScraper" />
+        <item itemvalue="Application.ScrapeAll" />
       </list>
     </recent_temporary>
   </component>

@@ -1,9 +1,22 @@
-package tissscraper
+package tissscraper.scrapers
 
 import org.jsoup.Jsoup
 import org.jsoup.nodes.Element
 
 class HistoricoDeVersoes {
+
+    static void scraperHistoricoDeVersoes(String url){
+
+        def doc = Jsoup.connect(url).get()
+
+        // Selector Padrão TISS - Histórico das versões dos Componentes do Padrão TISS: #parent-fieldname-text > p:nth-child(6) > a
+        String urlVersoesAnteriores = doc.select("#parent-fieldname-text > p:nth-child(6) > a").attr("href")
+
+        String nameOutVersoesAnteriores = "Informações sobre versões do Padrão TISS Jan2016-Set2022"
+        String limiteDeDataInferior = "dez/2015"
+
+        extrairDadosDaTabela(urlVersoesAnteriores, nameOutVersoesAnteriores, limiteDeDataInferior)
+    }
 
     static void extrairDadosDaTabela(String url, String fileNameOut, String limitMesInferior){
         def doc = Jsoup.connect(url).get()

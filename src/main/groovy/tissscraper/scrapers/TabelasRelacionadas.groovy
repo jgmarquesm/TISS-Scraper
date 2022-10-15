@@ -1,10 +1,22 @@
-package tissscraper
+package tissscraper.scrapers
 
 import groovyx.net.http.OkHttpBuilder
 import groovyx.net.http.optional.Download
 import org.jsoup.Jsoup
 
 class TabelasRelacionadas {
+
+    static void scraperTabelasRelacionadas(String url) {
+
+        def doc = Jsoup.connect(url).get()
+
+        // Selector Padrão TISS - Tabelas Relacionadas: #parent-fieldname-text > p:nth-child(8) > a
+        String urlTabelasRelacionadas = doc.select("#parent-fieldname-text > p:nth-child(8) > a").attr("href")
+
+        String nameOutErrosDeEnvio = "Tabela Erros de envio para ANS"
+
+        downloadErrosDeEnviosParaANS(urlTabelasRelacionadas, nameOutErrosDeEnvio)
+    }
 
     static void downloadErrosDeEnviosParaANS(String url, String fileOutName){
 
@@ -18,5 +30,6 @@ class TabelasRelacionadas {
         }.get {
             Download.toFile(delegate, new File("./Downloads/${fileOutName}.xlsx"))
         }
+        println "Download feito com sucesso!"
     }
 }
