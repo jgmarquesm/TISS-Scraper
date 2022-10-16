@@ -15,24 +15,23 @@ class EmailDAO {
 
     private static void desconectar(connection) { connection.close() }
 
-    static void create(String email) {
+    static void create(String nome, String email) {
         Sql create = conectar()
-        List<String> params = [email]
-        create.executeInsert('INSERT INTO listaDeEnvios (email) VALUES (?)', params)
+        List<String> params = [email, nome]
+        create.executeInsert('INSERT INTO listaDeEnvios (email, nome) VALUES (?, ?)', params)
         desconectar(create)
     }
 
-    static List<String> read(){
+    static ArrayList<String> read(){
         Sql read = conectar()
-        String email
-        ArrayList<String> emails = new ArrayList<>()
-        read.query("SELECT email FROM listaDeEnvios"){
+        ArrayList<List<String>> pessoas = new ArrayList<>()
+        read.query("SELECT nome, email FROM listaDeEnvios"){
             while(it.next()){
-                emails.add(it.getString('email'))
+                pessoas.add([it.getString('nome'), it.getString('email')])
             }
         }
         desconectar(read)
-        emails
+        pessoas
     }
 
     static void update(String email, String novoEmail){

@@ -17,6 +17,8 @@ dependencies {
     implementation 'org.jsoup:jsoup:1.15.3'
     implementation 'org.postgresql:postgresql:42.5.0'
     implementation 'org.codehaus.groovy:groovy-all:3.0.11'
+    implementation 'jakarta.activation:jakarta.activation-api:2.1.0'
+    implementation 'jakarta.mail:jakarta.mail-api:2.1.0'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.0'
 }

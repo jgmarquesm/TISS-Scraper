@@ -6,10 +6,10 @@ import static tissscraper.gerenciamento.emails.EnviarEmail.enviarEmail
 class EnviarRelatorio {
 
     static void enviarRelatorio(){
-        ArrayList<String> emails = read()
+        ArrayList<String> pessoas = read()
 
-        for (String email : emails){
-            enviarEmail(email)
+        for (String pessoa : pessoas){
+            enviarEmail(pessoa[0], pessoa[1])
         }
     }
 }
