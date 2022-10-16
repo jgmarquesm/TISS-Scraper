@@ -19,8 +19,8 @@ class EnviarEmail {
     static void enviarEmail(String nome, String email){
 
         final String from = "email@email.com"
-        final String username = "4446118a007214"
-        final String password = "210e4398e0ee71"
+        final String username = "username"
+        final String password = "password"
         final String host = "smtp.mailtrap.io"
         final int port = 2525
 

@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7cae2992-1825-49d4-9a9d-a59b79795771" name="Changes" comment="FEAT: Implementação do CRUD de emails + refatoração dos módulos de scrape">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/tissscraper/App.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/tissscraper/App.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/tissscraper/DAO/EmailDAO.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/tissscraper/DAO/EmailDAO.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/tissscraper/gerenciamento/emails/CadastroDeEmail.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/tissscraper/gerenciamento/emails/CadastroDeEmail.groovy" afterDir="false" />
+    <list default="true" id="7cae2992-1825-49d4-9a9d-a59b79795771" name="Changes" comment="FEAT: Implementação envio de email">
       <change beforePath="$PROJECT_DIR$/src/main/groovy/tissscraper/gerenciamento/emails/EnviarEmail.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/tissscraper/gerenciamento/emails/EnviarEmail.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/tissscraper/gerenciamento/relatorio/EnviarRelatorio.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/tissscraper/gerenciamento/relatorio/EnviarRelatorio.groovy" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665812560086</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="FEAT: Implementação envio de email">
+      <created>1665885605833</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1665885605833</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -145,6 +146,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="FEAT: Coleta de dados das tasks 1, 2 e 3 feitas." />
     <MESSAGE value="FEAT: Implementação do CRUD de emails + refatoração dos módulos de scrape" />
-    <option name="LAST_COMMIT_MESSAGE" value="FEAT: Implementação do CRUD de emails + refatoração dos módulos de scrape" />
+    <MESSAGE value="FEAT: Implementação envio de email" />
+    <option name="LAST_COMMIT_MESSAGE" value="FEAT: Implementação envio de email" />
   </component>
 </project>
