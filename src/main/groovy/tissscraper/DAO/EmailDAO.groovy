@@ -22,9 +22,9 @@ class EmailDAO {
         desconectar(create)
     }
 
-    static ArrayList<String> read(){
+    static ArrayList<ArrayList<String>> read(){
         Sql read = conectar()
-        ArrayList<List<String>> pessoas = new ArrayList<>()
+        ArrayList<ArrayList<String>> pessoas = new ArrayList<>()
         read.query("SELECT nome, email FROM listaDeEnvios"){
             while(it.next()){
                 pessoas.add([it.getString('nome'), it.getString('email')])

@@ -1,4 +1,4 @@
-package tissscraper.gerenciamento.emails
+package tissscraper.gerenciamento.email
 
 import static tissscraper.DAO.EmailDAO.delete
 
@@ -12,5 +12,7 @@ class ExclusaoDeEmail {
         String email = entrada.next()
 
         delete(email)
+        println "Cadastro excluído com sucesso!"
+
     }
 }

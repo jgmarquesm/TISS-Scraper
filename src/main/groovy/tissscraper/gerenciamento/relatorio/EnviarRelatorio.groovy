@@ -1,15 +1,18 @@
 package tissscraper.gerenciamento.relatorio
 
+import tissscraper.App
+
 import static tissscraper.DAO.EmailDAO.read
-import static tissscraper.gerenciamento.emails.EnviarEmail.enviarEmail
+import static tissscraper.gerenciamento.email.EnviarEmail.enviarEmail
 
 class EnviarRelatorio {
 
     static void enviarRelatorio(){
-        ArrayList<String> pessoas = read()
+        ArrayList<ArrayList<String>> pessoas = read()
 
-        for (String pessoa : pessoas){
+        for (ArrayList<String> pessoa : pessoas){
             enviarEmail(pessoa[0], pessoa[1])
         }
+        App.main()
     }
 }

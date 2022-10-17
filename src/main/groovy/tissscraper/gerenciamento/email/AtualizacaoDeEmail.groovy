@@ -1,4 +1,4 @@
-package tissscraper.gerenciamento.emails
+package tissscraper.gerenciamento.email
 
 import static tissscraper.DAO.EmailDAO.update
 
@@ -14,5 +14,6 @@ class AtualizacaoDeEmail {
         String novoEmail = entrada.next()
 
         update(email, novoEmail)
+        println "Cadastro atualizado com sucesso!"
     }
 }

@@ -1,4 +1,4 @@
-package tissscraper.gerenciamento.emails
+package tissscraper.gerenciamento.email
 
 import static tissscraper.DAO.EmailDAO.create
 
@@ -14,5 +14,6 @@ class CadastroDeEmail {
         String email = entrada.next()
 
         create(nome, email)
+        println "Cadastro realizado com sucesso!"
     }
 }
