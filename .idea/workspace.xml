@@ -4,20 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7cae2992-1825-49d4-9a9d-a59b79795771" name="Changes" comment="FEAT: Implementação envio de email">
-      <change afterPath="$PROJECT_DIR$/src/main/groovy/tissscraper/gerenciamento/email/EnviarEmail.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/groovy/tissscraper/gerenciamento/menus/MenuCRUDEmail.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/groovy/tissscraper/gerenciamento/menus/MenuColetaDeDados.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/groovy/tissscraper/gerenciamento/menus/MenuInicial.groovy" afterDir="false" />
+    <list default="true" id="7cae2992-1825-49d4-9a9d-a59b79795771" name="Changes" comment="BUGFIX: Correção de envio de email&#10;FEAT: Finalização v1 do projeto">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/tissscraper/App.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/tissscraper/App.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/tissscraper/DAO/EmailDAO.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/tissscraper/DAO/EmailDAO.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/tissscraper/gerenciamento/emails/AtualizacaoDeEmail.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/tissscraper/gerenciamento/email/AtualizacaoDeEmail.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/tissscraper/gerenciamento/emails/CadastroDeEmail.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/tissscraper/gerenciamento/email/CadastroDeEmail.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/tissscraper/gerenciamento/emails/EnviarEmail.groovy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/tissscraper/gerenciamento/emails/ExclusaoDeEmail.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/tissscraper/gerenciamento/email/ExclusaoDeEmail.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/tissscraper/gerenciamento/relatorio/EnviarRelatorio.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/tissscraper/gerenciamento/relatorio/EnviarRelatorio.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/groovy/tissscraper/gerenciamento/email/EnviarEmail.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/tissscraper/gerenciamento/email/EnviarEmail.groovy" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665885670684</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="BUGFIX: Correção de envio de email&#10;FEAT: Finalização v1 do projeto">
+      <created>1666027921136</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1666027921145</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -172,6 +168,7 @@
     <MESSAGE value="FEAT: Coleta de dados das tasks 1, 2 e 3 feitas." />
     <MESSAGE value="FEAT: Implementação do CRUD de emails + refatoração dos módulos de scrape" />
     <MESSAGE value="FEAT: Implementação envio de email" />
-    <option name="LAST_COMMIT_MESSAGE" value="FEAT: Implementação envio de email" />
+    <MESSAGE value="BUGFIX: Correção de envio de email&#10;FEAT: Finalização v1 do projeto" />
+    <option name="LAST_COMMIT_MESSAGE" value="BUGFIX: Correção de envio de email&#10;FEAT: Finalização v1 do projeto" />
   </component>
 </project>

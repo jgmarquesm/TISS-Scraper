@@ -1,5 +1,6 @@
 package tissscraper.gerenciamento.email
 
+import com.sun.mail.smtp.SMTPTransport
 import jakarta.activation.CommandMap
 import jakarta.activation.DataHandler
 import jakarta.activation.DataSource
@@ -12,21 +13,24 @@ import jakarta.mail.Message
 import jakarta.mail.Multipart
 import jakarta.mail.Session
 import jakarta.mail.Transport
+import jakarta.mail.Provider
 import jakarta.mail.internet.InternetAddress
 import jakarta.mail.internet.MimeBodyPart
 import jakarta.mail.internet.MimeMessage
 import jakarta.mail.internet.MimeMultipart
-import java.util.concurrent.CompletableFuture
 import java.util.concurrent.Executors
+
+import static jakarta.mail.Provider.Type.TRANSPORT
+import static java.util.concurrent.CompletableFuture.runAsync
 
 class EnviarEmail {
 
     static void enviarEmail(String nome, String email){
 
-        final String USERNAME = "5d08c14fd839aa"
-        final String PASSWORD = "255ad93d7a187b"
-        final String FROM = "joao@example.com"
-        final String HOST = "smtp.mailtrap.io"
+        final String USERNAME = "teste.envio.email.jgmarques@gmail.com"
+        final String PASSWORD = "eeysowkeixykpwgw"
+        final String FROM = "tissScarper@relatorio.mensal"
+        final String HOST = "smtp.gmail.com"
         final int PORT = 587
 
         Properties props = new Properties()
@@ -34,6 +38,7 @@ class EnviarEmail {
         props.put("mail.smtp.starttls.enable", "true")
         props.put("mail.smtp.host", HOST)
         props.put("mail.smtp.port", PORT)
+        props.put("mail.debug", "true")
 
         Authenticator auth = new Authenticator() {
             protected PasswordAuthentication getPasswordAuthentication() {
@@ -80,7 +85,7 @@ class EnviarEmail {
         message.setContent(multipart)
         message.saveChanges()
 
-        CompletableFuture.runAsync(() -> {
+        runAsync(() -> {
 
             MailcapCommandMap mc = (MailcapCommandMap) CommandMap.getDefaultCommandMap()
             mc.addMailcap("text/xml;; x-java-content-handler=com.sun.mail.handlers.text_xml")
@@ -91,7 +96,8 @@ class EnviarEmail {
 
             Thread.currentThread().setContextClassLoader(getClass().getClassLoader())
             try {
-                Transport tr = session.getTransport("smtp")
+                Provider smtp = Provider.Provider(TRANSPORT, "smtp", "com.sun.mail.smtp.SMTPTransport", "Oracle", "2.0.1")
+                Transport tr = session.getTransport(smtp)
                 tr.connect(HOST, USERNAME, PASSWORD)
                 tr.sendMessage(message, message.getAllRecipients())
                 tr.close()
